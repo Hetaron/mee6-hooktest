@@ -93,8 +93,7 @@ class Levels(Plugin):
             response = '{} : **{}**\'s rank > **LEVEL {}** | **XP {}/{}** '\
                 '| **TOTAL XP {}** | **Rank {}/{}**'.format(
                     message.author.mention,
-                    player.name,
-                    player_info['lvl'],
+                    player.name,player_info['lvl'],
                     player_info['remaining_xp'],
                     player_info['level_xp'],
                     player_info['total_xp'],
@@ -104,8 +103,7 @@ class Levels(Plugin):
         else:
             response = '{} : **LEVEL {}** | **XP {}/{}** | '\
                 '**TOTAL XP {}** | **Rank {}/{}**'.format(
-                    player.mention,
-                    player_info['lvl'],
+                    player.mention,player_info['lvl'],
                     player_info['remaining_xp'],
                     player_info['level_xp'],
                     player_info['total_xp'],
